@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+        nav button {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #555;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        nav button:hover {
+            background-color: #777;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Website</h1>
+    <p>Get to know more about me!</p>
+</header>
+
+<nav>
+    <button onclick="scrollToSection('about')">About Me</button>
+    <button onclick="scrollToSection('hobbies')">Hobbies</button>
+    <button onclick="scrollToSection('interest')">Interest</button>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p> Hi Hello welcome to my website My name is Carlos, and I’m passionate about combat sports and video games. I’m more of a boxing fan but i've been getting into ufc latley. I mostly watch mma with my dad. I enjoy playing manly multiplayer games but I've recently started playing more single player rpg games thanks to one of my friends. I'm alos a big fan of other sports not just combat lik football and basket ball.   </p>
+</section>
+
+<section id="hobbies">
+    <h2>Hobbies</h2>
+    <p> In my free time I mostly just either go ride my bike around my nieghberhood. I also enjoy playing video games with my friends. I also practice boxing with a coach.  </p>
+</section>
+
+<section id="interest">
+    <h2>Interest </h2>
+    <p> my intrest include boxing MMA and basket ball. the lakers are my favorite basketball team. I also enjoy watching anime.I enjoy horrer movies and action movie   <a href="mailto:your.email@example.com"></a> my interest </p>
+</section>
+
+<img src="images.png"  alt="My Image" width="300" height="200">
+
+<footer>
+    <p>&copy; 2024 carlos solorio. All rights reserved.</p>
+</footer>
+
+<script>
+    function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
